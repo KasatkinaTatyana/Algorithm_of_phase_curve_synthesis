@@ -1,4 +1,8 @@
 function F = find_borders(Y_0, Y_end, N, N_shift_left, N_shift_right, d)
+% Находится граничные точки y_left, y_right вида [y   y'   y''], для
+% которых кривая выходит за ограничение; N_shift_left, N_shift_right -
+% сдвиг влево и вправо на соответствующее количество шагов. N - количество
+% разбиений исходного отрезка по y
 global constr
 
 delta = Y_end(1) - Y_0(1);
